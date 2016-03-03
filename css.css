@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+		body
+		{
+		font-family:arial;
+		}
+		div,body
+		{
+		margin:0px;
+		padding:0px;
+		}
+		.head
+		{
+		position:fixed;
+		left:0px;
+		right:0px;
+		top:0px;
+		height:45px;
+		padding:0px;
+		background-color:#AAA;
+		z-index:100;
+		color:white;
+		border-style:none;
+	    background: -webkit-linear-gradient(#AAAAAA,#5F5F5F); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#AAAAAA,#5F5F5F); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#AAAAAA,#5F5F5F); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#AAAAAA,#5F5F5F); /* Standard syntax (must be last) */
+		box-shadow:0px 0px 10px -1px black;
+		opacity:0.98;
+		text-shadow:0px -1px 0px #333333;
+		/*
+		opacity:0.95;
+		border-style:none none solid none;
+		border-width:2px;
+		border-color:#DDDDDD;
+		*/
+		font-size:25px;
+		}
+		ul.head-menu{
+		margin:0px;
+		padding:0px;
+		}
+		li.head-menu,li.head-item{
+		display:inline-block;
+		list-style-type:none;
+		padding:8px 15px 8px 15px;
+		float:left;
+		}
+		li.head-menu:hover{
+	    background: -webkit-linear-gradient(#777777,#2F2F2F); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#777777,#2F2F2F); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#777777,#2F2F2F); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#777777,#2F2F2F); /* Standard syntax (must be last) */
+		}
+		.body
+		{
+		z-index:0;
+		overflow:auto;
+		background-color:#FFFFFF;
+		min-height:100%;
+		}
+		.sidebar
+		{
+		position:fixed;
+		top:45px;
+		left:0px;
+		bottom:0px;
+		width:180px;
+		background-color:#555;
+		text-align:left;
+		padding:10px;
+		color:white;
+		opacity:0.98;
+		z-index:99;
+		}
+		.content
+		{
+		position:absolute;
+		top:45px;
+		bottom:0px;
+		left:200px;
+		right:0px;
+		background-color:#FFFFFF;
+		text-align:left;
+		margin:0px; padding:20px;
+		overflow:visible;
+		}
+		.head-spacer{
+		width:100%;
+		height:70px;
+		padding:0px;
+		margin:0px;
+		}
+		.sidebar-link
+		{
+		text-decoration:none;
+		color:white;
+		}
+		.sidebar-link:hover
+		{
+		text-decoration:underline;
+		}
+		td,th{
+		border-style:solid;
+		border-color:black;
+		border-width:1px;
+		}
+		th{
+		padding:10px;
+		background-color:green;
+		color:white;
+		text-shadow:0px -1px 0px black;
+		}
+		table{
+		border-collapse:collapse;
+		}
+		select,input,textarea{
+		height:35px;
+		padding:5px;
+		margin:10px;
+		font-size:15px;
+		background-color:white;
+		border-style:solid;
+		border-color:#999999;
+		border-width:1px;
+		border-radius:3px;
+		outline-style:none;
+		box-shadow:inset 0px 1px 5px -3px black;
+		}
+		select:focus,input:focus,textarea:focus{
+		border-color:black;
+		box-shadow:inset 0px 1px 5px -2px black;
+		}
+		input[type="button"],input[type="submit"]{
+		border-color:black;
+		border-style:solid;
+		background-color:#CCCCCC;
+		text-shadow:0px 1px 0px #FFFFFF;
+		}
+		.button{
+		padding:5px;
+		margin:10px;
+		font-size:20px;
+		background-color:white;
+		border-style:solid;
+		border-color:black;
+		border-width:1px;
+		border-radius:3px;
+		text-shadow:0px 1px 0px #FFFFFF;
+		display:inline-block;
+		font-family:arial;
+		}
+		.button-inactive{
+		background-color:#CCCCCC;
+		box-shadow:inset 0px 0px 0px 0px black;
+	    background: -webkit-linear-gradient(#FFFFFF,#AAAAAA); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#FFFFFF,#AAAAAA); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#FFFFFF,#AAAAAA); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#FFFFFF,#AAAAAA); /* Standard syntax (must be last) */
+		}
+		.button-active{
+		box-shadow:inset 0px 0px 2px -1px black;
+		background-color:#AAAAAA;
+	    background: -webkit-linear-gradient(#AAAAAA,#FFFFFF); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#AAAAAA,#FFFFFF); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#AAAAAA,#FFFFFF); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#AAAAAA,#FFFFFF); /* Standard syntax (must be last) */
+		}
+		.button,.noselect{
+		-webkit-touch-callout:none;
+		-webkit-user-select:none;
+		-khtml-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+		}
+		
+		
+		.page-form-container{
+		padding:25px;
+		display:inline-block;
+		width:230px;;
+		border-radius:10px;
+		background-color:white;
+		box-shadow:1px 0px 10px black;
+		}
+		.page-form-input{
+		width:200px;
+		}
+		a.saved-search-item{
+		color:black;
+		padding:0px;
+		margin:0px;
+		text-decoration:none;
+		}
+		li.saved-search-item{
+		list-style-type:none;
+		margin:5px;
+		padding:0px;
+		border-radius:3px;
+		background-color:#AAAAAA;
+		text-shadow:0px 1px 0px #FFFFFF;
+	    background: -webkit-linear-gradient(#DDDDDD,#AAAAAA); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#DDDDDD,#AAAAAA); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#DDDDDD,#AAAAAA); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#DDDDDD,#AAAAAA); /* Standard syntax (must be last) */
+		overflow:hidden;
+		}
+		p.saved-search-item{
+		display:inline-block;
+		margin:10px;
+		vertical-align:middle;
+		}
+		img.saved-search-item{
+		height:20px;
+		width:20px;
+		vertical-align:middle;
+		margin:5px;
+		margin-right:0px;
+		cursor:pointer;
+		}
+		input.saved-search-item{
+		display:inline-block;
+		vertical-align:middle;
+		margin:5px;
+		height:28px;
+		}
+		.td-edit,.th-edit,.td_edit,.th_edit{
+		display:none;
+		width:100%;
+		height:100%;
+		margin:0px;
+		border-style:none;
+		border-radius:0px;
+		padding:0px;
+		resize:none;
+		background-color:#CCCCCC;
+		text-shadow:0px 1px 1px white;
+		text-align:center;
+		}
+		.th-edit,.th_edit{
+		padding:10px;
+		}
+		
+		
+		
+		
